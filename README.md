@@ -39,7 +39,9 @@ Se ha validado la conectividad de las interfaces bajo un esquema de direccionami
 * **DNS:** Configurado a 8.8.8.8 para resolución de amenazas externas.
 * **Resultado:** El firewall es accesible vía Web GUI y está listo para la implementación de Suricata y la exportación de logs hacia Splunk.
 ---
-### 3 
+### 3 Ubuntu SIEM
+
+![maquina ubuntu finalizada](img/fin.png)
 
 ## Detalles de Configuracion
 ### 3.1 Configuración de Acceso Externo
@@ -56,6 +58,9 @@ Se confirmó la salida a internet del servidor Ubuntu mediante la prueba de espe
 
 * **Estado:** Exitoso.
 * **Gateway Operacional:** El tráfico de actualización está siendo ruteado correctamente a través de OPNsense (10.0.1.122).
+
+### 4 
+
 
 
 ## 📊 Estado del Proyecto
