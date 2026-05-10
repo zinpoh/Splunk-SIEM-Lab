@@ -5,8 +5,6 @@ Proyecto de despliegue de un entorno SOC (Security Operations Center) doméstico
 
 ## 🏗️ Arquitectura del Laboratorio
 
-![Arquitectura de red](img/archi_map.png)
-
 ### Componentes:
 * **Firewall/IDS:** OPNsense (Segmentación de redes WAN/SOC/DMZ y detección vía Suricata).
 * **SIEM:** Splunk Enterprise corriendo en Ubuntu Server.
@@ -59,14 +57,15 @@ Se confirmó la salida a internet del servidor Ubuntu mediante la prueba de espe
 * **Estado:** Exitoso.
 * **Gateway Operacional:** El tráfico de actualización está siendo ruteado correctamente a través de OPNsense (10.0.1.122).
 
-### 4 
+### 4 Maquina Atacante Kali
+![kali](img/kali-atack.png)
 
 
 
 ## 📊 Estado del Proyecto
 - [x] Instalación de Windows Server 2022 (Endpoint).
 - [x] Configuración inicial de OPNsense (Firewall).
-- [ ] Configuración de segmentación LAN/DMZ en Firewall.
-- [ ] Instalación de Splunk Enterprise en Ubuntu.
+- [x] Configuración de segmentación LAN/DMZ en Firewall.
+- [x] Instalación de Splunk Enterprise en Ubuntu.
 - [ ] Despliegue de Sysmon y Splunk Forwarder en la víctima.
 - [ ] Simulación de ataques y creación de Dashboards.
