@@ -29,6 +29,15 @@ Para la gestión perimetral, se optó por **OPNsense** debido a su robusto motor
 ![Consola OPNsense](img/OPNsense.png)
 * **Descripción:** Asignación de interfaces vía CLI. La interfaz `em0` se configuró como WAN para la salida segura a internet, mientras que `em1` se estableció como el Gateway de la zona LAN/SOC.
 
+### Configuración Final de Red (Escenario Unificado)
+Se ha validado la conectividad de las interfaces bajo un esquema de direccionamiento unificado para optimizar la visibilidad del IDS/IPS.
+
+![Menú Principal OPNsense](img/conf_opn.png)
+
+* **Interface WAN (em0):** 10.0.1.100/24.
+* **Interface LAN (em1):** 10.0.1.122/24.
+* **DNS:** Configurado a 8.8.8.8 para resolución de amenazas externas.
+* **Resultado:** El firewall es accesible vía Web GUI y está listo para la implementación de Suricata y la exportación de logs hacia Splunk.
 ---
 
 ## 📊 Estado del Proyecto
