@@ -32,7 +32,7 @@ Para la gestión perimetral, se optó por **OPNsense** debido a su robusto motor
 ### 2.1 Configuración Final de Red (Escenario Unificado)
 Se ha validado la conectividad de las interfaces bajo un esquema de direccionamiento unificado para optimizar la visibilidad del IDS/IPS.
 
-![Menú Principal OPNsense](img/conf_opn.png)
+![Menú Principal OPNsense](img/conf_opn1.png)
 
 * **Interface WAN (em0):** 10.0.1.100/24.
 * **Interface LAN (em1):** 10.0.1.122/24.
