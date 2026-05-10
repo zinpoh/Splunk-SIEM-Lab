@@ -5,8 +5,7 @@ Proyecto de despliegue de un entorno SOC (Security Operations Center) doméstico
 
 ## 🏗️ Arquitectura del Laboratorio
 
-![Arquitectura de Red]
-![map](img/archi_map)
+![Arquitectura de red](img/archi_map)
 
 ### Componentes:
 * **Firewall/IDS:** OPNsense (Segmentación de redes WAN/SOC/DMZ y detección vía Suricata).
