@@ -20,7 +20,7 @@ Proyecto de despliegue de un entorno SOC (Security Operations Center) doméstico
 ### 1.1 Instalación de Windows Server 2022 (Target)
 Se realizó la instalación base de Windows Server en el segmento DMZ. Este servidor actuará como el activo crítico a monitorear.
 
-![Escritorio Windows Server](AQUÍ_VA_TU_PANTALLAZO_DEL_ESCRITORIO)
+![Escritorio Windows Server](img/win_server_install.png)
 * **Descripción:** Confirmación de despliegue del sistema operativo. En esta etapa se configuró la IP estática y se preparó el entorno para la ingesta de telemetría.
 
 ### 1.2 Instalación y Configuración de OPNsense
