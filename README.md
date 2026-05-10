@@ -26,7 +26,7 @@ Se realizó la instalación base de Windows Server en el segmento DMZ. Este serv
 ### 1.2 Instalación y Configuración de OPNsense
 Para la gestión perimetral, se optó por **OPNsense** debido a su robusto motor de IDS/IPS y estabilidad en entornos virtualizados.
 
-![Consola OPNsense](AQUÍ_VA_TU_PANTALLAZO_DE_LA_CONSOLA_NEGRA)
+![Consola OPNsense](img/OPNsense.png)
 * **Descripción:** Asignación de interfaces vía CLI. La interfaz `em0` se configuró como WAN para la salida segura a internet, mientras que `em1` se estableció como el Gateway de la zona LAN/SOC.
 
 ---
