@@ -40,6 +40,16 @@ Se ha validado la conectividad de las interfaces bajo un esquema de direccionami
 * **Resultado:** El firewall es accesible vía Web GUI y está listo para la implementación de Suricata y la exportación de logs hacia Splunk.
 ---
 
+### 2.3 Configuración de Acceso Externo
+Durante la fase de 'Proxy Configuration', se optó por omitir el uso de un proxy dedicado.
+![omision de proxy](img/omi.png)
+
+* **Decisión:** Salida directa vía Gateway (OPNsense).
+* **Justificación:** Se busca simplificar la cadena de flujo de datos para la ingesta inicial de Splunk, delegando el control de tráfico y filtrado directamente al Firewall perimetral del laboratorio.
+
+
+
+
 ## 📊 Estado del Proyecto
 - [x] Instalación de Windows Server 2022 (Endpoint).
 - [x] Configuración inicial de OPNsense (Firewall).
