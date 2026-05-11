@@ -95,6 +95,14 @@ en la misma pestaña de **System -> Settings -> Administration** para selecciona
 ![referen2](img/reference2.png)
 * **para que sirve?** para que el firewall no me bloquee si accidentalmente borre la regla de la Lan.
 
+### 3. Interfaces
+Configuraremos OPT1 y OPT2 les daremos en **"Enable"** y **"save"**
+* esto nos permitira saber si OPNsense los reconoce
+![opt1](img/opt1.png)
+![opt2](img/opt2.png)
+
+
+
 
 
 
