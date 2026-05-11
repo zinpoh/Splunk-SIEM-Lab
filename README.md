@@ -65,6 +65,9 @@ Se confirmó la salida a internet del servidor Ubuntu mediante la prueba de espe
 
 * **Configuracion:** A traves de opensense realizo la configuaración de las ip's de cada maquina
 
+### Vista de configuracion de adaptadores de red con el rango ip por entorno
+![adaptadores de red](img/view-adp.png)
+
 
 ## 📊 Estado del Proyecto
 - [x] Instalación de Windows Server 2022 (Endpoint).
