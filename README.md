@@ -178,6 +178,32 @@ sudo ip link set eth0 up
 ```bash
 sudo ip route add default via 10.0.3.1
 ```
+# Configuracion de errores WAN
+## A Bloqueo de Redes Privadas
+si aun no conecta al internet es normal que suceda, ya que, opensense, bloquea por defecto trafico de ip´s privadas por seguridad
+   1. Ve a Interfaces -> [WAN].
+   2. Baja hasta el final de la página.
+   3. Desmarca la casilla "Block private networks".
+   4. Desmarca la casilla "Block bogon networks".
+   ![casillas](img/desac.png)
+   6. Dale a Save y luego a Apply Changes.
+
+## B DNS en el Opensense
+Si el OPNsense no tiene configurado un DNS, no sabrá cómo resolver hacia afuera
+1. Ve a **System -> Settings -> General**
+2. en **DNS Servers**, agrega:
+   * 8.8.8.8
+   * 1.1.1.1
+![dhcp_conf](img/dhcp.png)
+3. Asegurese de que "**Allow DNS server list to be overridden by DHCP/PPP on WAN**" esté marcado.
+4. **Save**
+
+## C Outbound NAT
+para que Kali salga a internet, OPNsense tiene que "traducir" su IP interna a la ip de la WAN
+
+1. Ve a Firewall -> NAT -> Outbound.
+2. Asegúrate de que esté seleccionado "Automatic outbound NAT rule generation".
+3. Si ya está así, cámbialo a "Hybrid outbound NAT rule generation", dale a Save y verifica si se crearon reglas automáticamente para las redes 10.0.x.x.
 
 ## 📊 Estado del Proyecto
 - [x] Instalación de Windows Server 2022 (Endpoint).
