@@ -96,14 +96,37 @@ en la misma pestaña de **System -> Settings -> Administration** para selecciona
 * **para que sirve?** para que el firewall no me bloquee si accidentalmente borre la regla de la Lan.
 
 ### 3. Interfaces
-Configuraremos OPT1 y OPT2 les daremos en **"Enable"** y **"save"**
+Configuraremos OPT1 (WinServer) y OPT2 (Kali Attacker) les daremos en **"Enable"** y **"save"**
 * esto nos permitira saber si OPNsense los reconoce
 ![opt1](img/opt1.png)
 ![opt2](img/opt2.png)
 
+* Sin embargo, en el mundo de los firewalls (especialmente en OPNsense/pfSense), habilitar no es lo mismo que permitir. Por defecto, todo el tráfico que entra por una interfaz nueva es bloqueado por una regla invisible de "Deny All".
 
+### 4. Configuración de Reglas de Firewall en OPNsense
+Para permitir que el tráfico fluya correctamente entre las diferentes zonas de red (SIEM, DMZ y Atacante), se deben configurar las siguientes reglas de paso.
 
+### 4.1 Configurar Regla para OPT1 (Windows Server)
 
+Esta regla permite que el servidor Windows en la VMnet3 tenga conectividad.
+1. En el menú de la izquierda, ve a **Firewall -> Rules -> [OPT1]**.
+![home-firewall](img/home1Fire.png)
+   
+2. Haz clic en el botón **Add** (el símbolo **+** arriba a la derecha).
+![home-add](img/home1Add.png)
+
+3. Configura solo estos campos (deja el resto por defecto):
+   - **Action:** `Pass`
+   - **Protocol:** `any`
+   - **Source:** `OPT1 net`
+   - **Destination:** `any`
+![home-comf](img/home1Conf.png)
+
+4. Baja y dale a **Save**.
+![home1-save](img/home1-save.png)
+ 
+5. Luego dale al botón naranja **Apply Changes** que aparecerá arriba.
+![home1-apply](img/home1-apply.png)
 
 
 ## 📊 Estado del Proyecto
