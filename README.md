@@ -60,6 +60,10 @@ Se confirmó la salida a internet del servidor Ubuntu mediante la prueba de espe
 ### 4 Maquina Atacante Kali
 ![kali](img/kali-atack.png)
 
+## Configurando maquinas desde OPNsense
+![configaracion de ip Machines](img/conf-mach.png)
+
+* **Configuracion:** A traves de opensense realizo la configuaración de las ip's de cada maquina
 
 
 ## 📊 Estado del Proyecto
