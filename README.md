@@ -120,15 +120,48 @@ Esta regla permite que el servidor Windows en la VMnet3 tenga conectividad.
    - **Protocol:** `any`
    - **Source:** `OPT1 net`
    - **Destination:** `any`
+
 ![home-comf](img/home1Conf.png)
 
 4. Baja y dale a **Save**.
+
 ![home1-save](img/home1-save.png)
  
 5. Luego dale al botón naranja **Apply Changes** que aparecerá arriba.
 ![home1-apply](img/home1-apply.png)
 
+### 4.2 Configurar Regla para OPT2 (Kali Attacker)
+Esta regla habilita el tráfico para la máquina de ataque en la VMnet4.
 
+1. Ve a **Firewall -> Rules -> [OPT2]**.
+![home-firewall](img/home2Fire.png)
+
+2. Haz clic en **Add (+)**.
+![home-add](img/home2Add.png)
+
+3. Configura:
+   - **Action:** `Pass`
+   - **Protocol:** `any`
+   - **Source:** `OPT2 net`
+   - **Destination:** `any`
+
+![home-comf](img/home2Conf.png)
+
+4. Dale a **Save** y luego a **Apply Changes**.
+![home1-save](img/home2-save.png)
+![home1-apply](img/home2-apply.png)
+---
+
+## 🚀 La Verificación Final
+
+Una vez que apliques esos cambios, realiza la prueba de fuego desde el **Kali Linux** para confirmar que el firewall está ruteando correctamente:
+
+1. Abre la terminal en Kali.
+2. **Prueba de conexión a Internet:**
+   ```bash
+   ping 8.8.8.8
+   ```
+   
 ## 📊 Estado del Proyecto
 - [x] Instalación de Windows Server 2022 (Endpoint).
 - [x] Configuración inicial de OPNsense (Firewall).
