@@ -84,6 +84,20 @@ pfctl -d
 ![page_OPN](img/login.png)
 * **Navegador:** como en este caso el adptador del firewall hacia el internet utiliza bridge (puente), me permite utilizar mi dipositivo fisico
 
+## Configuraciones de OPNsense
+### 1. Disable HTTP Referential integrity check
+Desde la pagina principal seleccionamos en la barra de navegacion lateral en **System**, luego en **Settings** y luego en **Administration**
+![referen](img/reference1.png)
+* **para que sirve?** Evita que el firewall me saque cuendo entre desde una IP (como la wan) quen él no reconoce como "segura" originalmente
+
+### 2. Disable web GUI anti-lockout rule
+en la misma pestaña de **System -> Settings -> Administration** para seleccionar la opcion **Disable web GUI redirect rule**
+![referen2](img/reference2.png)
+* **para que sirve?** para que el firewall no me bloquee si accidentalmente borre la regla de la Lan.
+
+
+
+
 ## 📊 Estado del Proyecto
 - [x] Instalación de Windows Server 2022 (Endpoint).
 - [x] Configuración inicial de OPNsense (Firewall).
