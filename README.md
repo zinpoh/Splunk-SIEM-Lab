@@ -73,6 +73,13 @@ Se confirmó la salida a internet del servidor Ubuntu mediante la prueba de espe
 | VMnet3 | WinSRVR2022 | em2 | 10.0.2.0/24 | 10.0.2.50 | 10.0.2.100 |
 | Vmnet4 | Kali atack | em3 | 10.0.3.0/24 | 10.0.3.50 | 10.0.3.100 |
 
+### Configuracion en OPNsense
+comando para desactivar temporalmente el bloqueo de la web GUI desde la WAN
+```bash
+pfctl -d
+```
+![desctivar](img/temp.png)
+
 ## 📊 Estado del Proyecto
 - [x] Instalación de Windows Server 2022 (Endpoint).
 - [x] Configuración inicial de OPNsense (Firewall).
