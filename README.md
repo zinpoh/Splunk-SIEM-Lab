@@ -80,6 +80,10 @@ pfctl -d
 ```
 ![desctivar](img/temp.png)
 
+### A contnuación nos dirigimos a la ip de la wan: https://ip_wan
+![page_OPN](img/login.png)
+* **Navegador:** como en este caso el adptador del firewall hacia el internet utiliza bridge (puente), me permite utilizar mi dipositivo fisico
+
 ## 📊 Estado del Proyecto
 - [x] Instalación de Windows Server 2022 (Endpoint).
 - [x] Configuración inicial de OPNsense (Firewall).
