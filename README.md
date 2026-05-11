@@ -161,7 +161,24 @@ Una vez que apliques esos cambios, realiza la prueba de fuego desde el **Kali Li
    ```bash
    ping 8.8.8.8
    ```
-   
+# Configuracion en Kali por errores de asignacion de IP
+En ciertas ocasiones El firewall no entrega IP automaticamente por DHCP, asique sera mejor entregarla uno mismo.
+## 1. Asigna la IP a la interfaz 
+Abrimos la consola de nuestra maquina de Kali y ejecutamos los siguientes comandos
+```bash
+sudo ip addr add 10.0.3.50/24 dev eth0
+```
+
+## 2. Levantar la interfaz
+```bash
+sudo ip link set eth0 up
+```
+
+## 3. Definir la ruta de salida (OPNsense)
+```bash
+sudo ip route add default via 10.0.3.1
+```
+
 ## 📊 Estado del Proyecto
 - [x] Instalación de Windows Server 2022 (Endpoint).
 - [x] Configuración inicial de OPNsense (Firewall).
