@@ -67,7 +67,10 @@ Se confirmó la salida a internet del servidor Ubuntu mediante la prueba de espe
 
 ### Vista de configuracion de adaptadores de red con el rango ip por entorno
 ![adaptadores de red](img/view-adp.png)
-
+red virtual especifica | maquina correspondiente | interfaz de OPNsense | red | desde (rango_ip) | hasta (rango_ip) |
+VMnet2 | Ubuntu SIEM | em1 | 10.0.1.0/24 | 10.0.1.50 | 10.0.1.100 |
+VMnet3 | WinSRVR2022 | em2 | 10.0.2.0/24 | 10.0.2.50 | 10.0.2.100 |
+Vmnet4 | Kali atack | em3 | 10.0.3.0/24 | 10.0.3.50 | 10.0.3.100 |
 
 ## 📊 Estado del Proyecto
 - [x] Instalación de Windows Server 2022 (Endpoint).
